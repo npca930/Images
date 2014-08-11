@@ -7,7 +7,7 @@
 //
 
 
-// Renvoie une image spécifique (Dossier/Id.jpg);
+// Renvoie une image spécifique (Dossier/[Id].jpg);
 
 
 include("./configuration.php");

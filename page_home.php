@@ -23,6 +23,8 @@
 
 <?php
 
+// print_r($_SERVER);
+
 $x = $_POST['x'];
 $y = $_POST['y'];
 
@@ -33,11 +35,11 @@ if (!empty($x) && is_numeric($x)) {
 
 	if (!empty($y) || is_numeric($y)) {
 
-	echo "<p>http://images.nicolaspierre.name/" . $x . "x" . $y . "</p>";
+	echo "<p>" . $Domaine . $x . "x" . $y . "</p>";
 		echo "<a href='/" . $x . "x" . $y . "'><img src='/" . $x . "x" . $y . "' /></a>";
 		}
 	else {
-	echo "<p>http://images.nicolaspierre.name/" . $x . "</p>";
+	echo "<p>" . $Domaine . $x . "</p>";
 		echo "<a href='/" . $x . "'><img src='/" . $x . "' /></a>";
 	
 		}
@@ -60,8 +62,8 @@ if (!empty($x) && is_numeric($x)) {
 
 <div class="col"><div>
 <h3>Utilisation</h3>
-<p><a href="http://images.nicolaspierre.name/800x500" target="_blank">http://images.nicolaspierre.name/800x500</a> donne une image de largeur 800px et de hauteur 500px</p>
-<p><a href="http://images.nicolaspierre.name/600" target="_blank">http://images.nicolaspierre.name/600</a> donne une image de largeur 600px et &agrave; la hauteur calcul&eacute;e de 371px, aux proportions du nombre d'or (1.618x1)</p>
+<p><a href="/800x500" target="_blank"><?php echo $Domaine; ?>800x500</a> donne une image de largeur 800px et de hauteur 500px</p>
+<p><a href="/600" target="_blank"><?php echo $Domaine; ?>600</a> donne une image de largeur 600px et &agrave; la hauteur calcul&eacute;e de 371px, aux proportions du nombre d'or (1.618x1)</p>
 </div></div>
 
 
@@ -73,8 +75,8 @@ if (!empty($x) && is_numeric($x)) {
 
 
 <div class="col"><div>
-<h3>Image Al&eacute;atoire</h3>
-<a href='./600' target='_blank'><img src='./200' style='max-width:100%;' /></a>
+<h3>Open Source</h3>
+<p>Tout le code est sur Github (pas les images) <a href="https://github.com/npca930/Images" target="_blank">npca930</a></p>
 </div></div>
 
 
