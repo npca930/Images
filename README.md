@@ -1,6 +1,8 @@
 Images;
 -------
 
+voir en action : images.nicolaspierre.name
+
 Une sélection d'images aléatoires (de nourriture) aux dimensions personnalisables
 nicolaspierre.name
 
